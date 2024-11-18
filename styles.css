@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-size: 1.1rem;
+    padding: 8px 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff;
+}
+
+#about .col-md-6 img {
+    width: 200px;  /* Increased profile picture size */
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#about .col-md-6 {
+    padding-top: 50px;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Added spacing between cards */
+}
+
+#skills .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#skills .card-body {
+    text-align: center;
+}
+
+#skills .progress {
+    height: 10px;
+}
+
+#skills .progress-bar {
+    background-color: #007bff; /* default blue color for progress bars */
+}
+
+/* Specific Progress Bar Colors for Each Skill */
+#skills .progress-bar:nth-child(1) {
+    background-color: #ff9800; /* Graphic Design */
+}
+
+#skills .progress-bar:nth-child(2) {
+    background-color: #4caf50; /* Cloud Computing */
+}
+
+#skills .progress-bar:nth-child(3) {
+    background-color: #f44336; /* Networking */
+}
+
+/* Projects Section */
+#projects {
+    background-color: #ffffff;
+}
+
+#projects .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#projects .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+#projects .card-body p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#projects .btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+#projects .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Section */
+/* Contact Section */
+#contact {
+    background-color: #ffffff; /* Change the background color to white */
+    color: #343a40; /* Adjust text color for contrast */
+}
+
+#contact .form-control {
+    background-color: #f1f1f1; /* Adjust input fields background color for a softer look */
+    color: #343a40; /* Ensure input text is dark for readability */
+    border: 1px solid #ccc; /* Add a border to the input fields */
+}
+
+#contact .form-control:focus {
+    background-color: #ffffff; /* Make the input fields white on focus */
+    border-color: #007bff; /* Focused input fields with a blue border */
+}
+
+#contact .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#contact .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    #about .col-md-6 {
+        padding-top: 20px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .progress-bar {
+        font-size: 0.8rem;
+    }
+}
