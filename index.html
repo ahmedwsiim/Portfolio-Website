@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" href="images/icon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -20,7 +22,7 @@
     
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bold" href="#">abeyahmadd</a>
+                <a class="navbar-brand fw-bold" href="index.html">ahmedwsiim</a>
                 
                 <button 
                     class="navbar-toggler" 
@@ -35,12 +37,12 @@
                 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#volunteering">Volunteering</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link bi bi-person-circle" href="about.html"></a></li>
+                        <li class="nav-item"><a class="nav-link bi bi-lightbulb-fill" href="skills.html"></a></li>
+                        <li class="nav-item"><a class="nav-link bi bi-file-ppt-fill" href="projects.html"></a></li>
+                        <li class="nav-item"><a class="nav-link bi bi-stack-overflow" href="volunteering.html"></a></li>
+                        <li class="nav-item"><a class="nav-link bi bi-award-fill" href="certifications.html"></a></li>
+                        <li class="nav-item"><a class="nav-link bi bi-telephone-fill" href="contact.html"></a></li>
                     </ul>
                 </div>
             </div>
@@ -171,41 +173,52 @@
 
 
     <!-- Certifications wala Section -->
-<section id="certifications" class="bg-light">
-    <div class="container">
-        <h2 class="text-center fw-bold">Certifications</h2>
-        <br>
-        <div class="row gy-4">
-            <div class="col-md-4">
-                <div class="card shadow-sm p-5 position-relative">
-                    <img src="images/Oracle_logo.svg" alt="Oracle Logo" class="position-absolute" style="top: 25px; left: 20px; width: 50px; height: auto;">
-                    <img src="images/ticklogo.png" alt="Verified" class="position-absolute" style="top: 19px; right: 20px; width: 19px; height: auto;">
-                    <h4>Oracle Cloud Infrastructure Certified Foundations Associate</h4>
-                    <p>Certified in Oracle Cloud Infrastructure, demonstrating skills in cloud computing fundamentals, architecture, and best practices.</p>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#certModal1">View Certificate</button>
+    <section id="certifications" class="bg-light">
+        <div class="container">
+            <br><br>
+            <h2 class="text-center fw-bold">Certifications</h2>
+            <br>
+            <div class="row gy-4">
+                <div class="col-md-4 d-flex">
+                    <div class="card shadow-sm w-100">
+                        <img src="images/oracle1.png" alt="Oracle Certification" class="card-img-top">
+                        <div class="card-body h-100 d-flex flex-column position-relative">
+                            <img src="images/Oracle_logo.svg" alt="Oracle Logo" class="position-absolute" style="top: 20px; left: 20px; width: 50px; height: auto;">
+                            <img src="images/ticklogo.png" alt="Verified" class="position-absolute" style="top: 20px; right: 20px; width: 19px; height: auto;">
+                            <h4 class="mt-4">Oracle Cloud Infrastructure Certified Foundations Associate</h4>
+                            <br>
+                            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#certModal1">View Certificate</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm p-5 position-relative">
-                    <img src="images/IBMlogo.svg" alt="IBM Logo" class="position-absolute" style="top: 25px; left: 25px; width: 25px; height: auto;">
-                    <img src="images/ticklogo.png" alt="Verified" class="position-absolute" style="top: 19px; right: 20px; width: 19px; height: auto;">
-                    <h4>Introduction to Containers w/ Docker, Kubernetes & OpenShift</h4>
-                    <p>Hands-on learning about containerization and orchestration tools, including Docker and Kubernetes, to streamline software deployment and operations.</p>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#certModal2">View Certificate</button>
+                <div class="col-md-4 d-flex">
+                    <div class="card shadow-sm w-100">
+                        <img src="images/ibm.png" alt="IBM Certification" class="card-img-top">
+                        <div class="card-body h-100 d-flex flex-column position-relative">
+                            <img src="images/IBMlogo.svg" alt="IBM Logo" class="position-absolute" style="top: 20px; left: 20px; width: 26px; height: auto;">
+                            <img src="images/ticklogo.png" alt="Verified" class="position-absolute" style="top: 20px; right: 20px; width: 19px; height: auto;">
+                            <h4 class="mt-4">Introduction to Containers with Docker, Kubernetes & OpenShift</h4>
+                            <br>
+                            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#certModal2">View Certificate</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm p-5 position-relative">
-                    <img src="images/postman-icon-svgrepo-com.svg" alt="Postman Logo" class="position-absolute" style="top: 13px; left: 25px; width: 25px; height: auto;">
-                    <img src="images/ticklogo.png" alt="Verified" class="position-absolute" style="top: 19px; right: 20px; width: 19px; height: auto;">
-                    <h4>PostMan API Fundamentals Student Expert</h4>
-                    <p>Proficient in Postman for API testing, learning how to send requests, test responses, and automate API workflows.</p>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#certModal3">View Certificate</button>
+                <div class="col-md-4 d-flex">
+                    <div class="card shadow-sm w-100">
+                        <img src="images/postman.jpeg" alt="Postman Certification" class="card-img-top">
+                        <div class="card-body h-100 d-flex flex-column position-relative">
+                            <img src="images/ticklogo.png" alt="Verified" class="position-absolute" style="top: 20px; right: 20px; width: 19px; height: auto;">
+                            <h4 class="mt-4">Postman API Fundamentals Student Expert</h4>
+                            <br>
+                            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#certModal3">View Certificate</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    
+    
 
 <div class="modal fade" id="certModal1" tabindex="-1" aria-labelledby="certModal1Label" aria-hidden="true">
     <div class="modal-dialog">
@@ -261,38 +274,42 @@
     <!-- Projects ka section -->
     <section id="projects">
         <div class="container">
+            <br><br>
             <h2 class="text-center fw-bold">Projects</h2>
             <div class="row gy-4">
-                <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Bus Ticket Reservation System</h5>
-                            <p class="card-text">A full-stack project to manage bus ticket reservations with features like user accounts, ticket booking, and payments.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+                <div class="col-md-4 d-flex">
+                    <div class="card shadow-sm w-100">
+                        <img src="images/busres.jpeg" alt="Bus Management" class="card-img-top">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <h5 class="card-title"> <br><br>Bus Ticket Reservation System</h5>
+                            <!-- <p class="card-text">A full-stack project to manage bus ticket reservations with features like user accounts, ticket booking, and payments.</p> -->
+                            <a href="#" class="btn btn-primary mt-auto">View Project</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
+                <div class="col-md-4 d-flex">
+                    <div class="card shadow-sm w-100">
+                        <img src="images/revmag.jpeg" alt="Revenue Management" class="card-img-top">
+                        <div class="card-body h-100 d-flex flex-column">
                             <h5 class="card-title">Revenue Management System</h5>
-                            <p class="card-text">A system for tracking business revenue, allowing users to input and analyze financial data to monitor business growth.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+                            <!-- <p class="card-text">A system for tracking business revenue, allowing users to input and analyze financial data to monitor business growth.</p> -->
+                            <a href="#" class="btn btn-primary mt-auto">View Project</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
+                <div class="col-md-4 d-flex">
+                    <div class="card shadow-sm w-100">
+                        <img src="images/netdep.jpeg" alt="Netflix Deployment" class="card-img-top">
+                        <div class="card-body h-100 d-flex flex-column">
                             <h5 class="card-title">Netflix Clone Deployment </h5>
-                            <p class="card-text">A Netflix clone was deployed using sustainable cloud resources, with Amazon EC2 for scalable hosting and Amazon S3 for secure data storage.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+                            <!-- <p class="card-text">A Netflix clone was deployed using sustainable cloud resources, with Amazon EC2 for scalable hosting and Amazon S3 for secure data storage.</p> -->
+                            <a href="#" class="btn btn-primary mt-auto">View Project</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
     <!-- Contact Wala Section -->
     <section id="contact">
@@ -315,22 +332,45 @@
         </div>
     </section>
 
+    <button id="backToTop" title="Back to Top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+
     <!-- Footer bbg section -->
-    <footer class="bg-dark text-white text-center p-5">
-        <p>Made with ❤️</p>
-        <br>
-        <div>
-            <a href="https://www.linkedin.com/in/ahmedwsiim" target="_blank" class="text-white mx-2">
-                <i class="fab fa-linkedin fa-lg"></i>
-            </a>
-            <a href="https://www.instagram.com/abeyahmadd" target="_blank" class="text-white mx-2">
-                <i class="fab fa-instagram fa-lg"></i>
-            </a>
-            <a href="https://www.twitter.com/ahmedwsiim" target="_blank" class="text-white mx-2">
-                <i class="fab fa-twitter fa-lg"></i>
-            </a>
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-6">
+                    <h5 class=" text-light fw-bold" >About Me</h5>
+                    <br>
+                    <p>I'm a Computer Science student passionate about cloud computing, DevSecOps, and web development. Reach out to collaborate or connect!</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class=" text-light fw-bold">Quick Links</h5>
+                    <br>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="#skills" class="text-light text-decoration-none">Skills</a></li>
+                        <li><a href="#projects" class="text-light text-decoration-none">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class=" text-light fw-bold">Connect</h5>
+                    <br>
+                    <a href="https://linkedin.com/in/ahmedwsiim" class="text-light me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="https://instagram.com/abeyahmadd" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://twitter.com/ahmedwsiim" class="text-light"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>© 2024 Ahmedwsiim. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
+
+
+
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
