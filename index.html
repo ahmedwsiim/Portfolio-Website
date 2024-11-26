@@ -61,22 +61,41 @@
     
 
     <!-- About Me ka Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-6 text-center">
-                    <img src="images/prof.jpeg" alt="Profile Picture" class="img-fluid rounded-circle p-4">
+<section id="about">
+    <div class="container py-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 text-center position-relative">
+                <!-- Decorative Elements -->
+                <div class="position-absolute top-50 start-50 translate-middle" 
+                    style="width: 220px; height: 220px; background: linear-gradient(135deg, rgba(0, 123, 255, 0.2), rgba(255, 193, 7, 0.2)); 
+                    border-radius: 50%; z-index: -1;">
                 </div>
-                <div class="col-md-6">
-                    <h2>About Me</h2>
-                    <p>Pursuing a Bachelor's degree in Computer Science at Bahauddin Zakariya University, I have developed a solid foundation in cloud computing, cloud security, and networking, with intermediate proficiency in Docker, Kubernetes, and essential cloud platforms and tools.</p>
-                    <p>I am experienced in modern technologies including .NET Framework, Python, C++, WordPress, and C#, and have created engaging graphic designs and filters with over 340K uses. Additionally, my internship at Faysal Bank involved troubleshooting, networking, client relations, system security, SQL, Linux, and Git.</p>
-
+                <div class="position-absolute top-50 start-50 translate-middle" 
+                    style="width: 260px; height: 260px; border: 2px dashed rgba(0, 0, 0, 0.5); border-radius: 50%; z-index: -2;">
                 </div>
+                <!-- Profile Image with Hover Effect -->
+                <img src="images/prof.jpeg" alt="Profile Picture" 
+                     class="img-fluid rounded-circle p-4 shadow-lg border border-primary profile-img">
+            </div>
+            <div class="col-md-6">
+                <h2>About Me</h2>
+                <p>Pursuing a Bachelor's degree in Computer Science at Bahauddin Zakariya University, I have developed a solid foundation in cloud computing, cloud security, and networking, with intermediate proficiency in Docker, Kubernetes, and essential cloud platforms and tools.</p>
+                <p>I am experienced in modern technologies including .NET Framework, Python, C++, WordPress, and C#, and have created engaging graphic designs and filters with over 340K uses. Additionally, my internship at Faysal Bank involved troubleshooting, networking, client relations, system security, SQL, Linux, and Git.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
+<!-- Custom Styles -->
+<style>
+    .profile-img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .profile-img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+</style>
 
    <!-- Skills Section -->
    <section id="skills">
