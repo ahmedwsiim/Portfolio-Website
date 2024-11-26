@@ -67,11 +67,11 @@
             <div class="col-md-6 text-center position-relative">
                 <!-- Decorative Elements -->
                 <div class="position-absolute top-50 start-50 translate-middle" 
-                    style="width: 220px; height: 220px; background: linear-gradient(135deg, rgba(0, 123, 255, 0.2), rgba(255, 193, 7, 0.2)); 
+                    style="width: 220px; height: 220px; background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); 
                     border-radius: 50%; z-index: -1;">
                 </div>
                 <div class="position-absolute top-50 start-50 translate-middle" 
-                    style="width: 260px; height: 260px; border: 2px dashed rgba(0, 0, 0, 0.5); border-radius: 50%; z-index: -2;">
+                    style="width: 260px; height: 260px; border: 2px dashed rgba(0, 0, 0, 1); border-radius: 50%; z-index: -2;">
                 </div>
                 <!-- Profile Image with Hover Effect -->
                 <img src="images/prof.jpeg" alt="Profile Picture" 
@@ -96,6 +96,8 @@
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     }
 </style>
+
+
 
    <!-- Skills Section -->
    <section id="skills">
@@ -369,11 +371,28 @@
         </div>
     </section>
     
- <!-- back to top wala button -->
+ <!-- <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button>
+    <!-- JavaScript for scroll to top -->
+    <script>
+        // Get the button
+        var mybutton = document.getElementById("scrollToTopBtn");
 
- <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
-    <i class="fas fa-chevron-up"></i>
-</a>
+        // When the user scrolls down 100px from the top of the document, show the button
+        window.onscroll = function() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+
+        // When the user clicks on the button, scroll to the top
+        mybutton.onclick = function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+
+    </script>
 
 
     <!-- Footer bbg section -->

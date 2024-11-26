@@ -46,6 +46,48 @@ section {
     border-radius: 5px; /* Rounded corners */
 }
 
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #000000a5; /* A nice blue background */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for a lifted look */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for color and scale */
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+/* Hover effect to make the button change color and scale */
+.scroll-to-top:hover {
+    background-color: #ff99005f; /* Darker blue on hover */
+    color: rgb(0, 0, 0);
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* Add a subtle animation when the button appears */
+.scroll-to-top.show {
+    animation: fadeIn 0.5s ease-out forwards;
+    -webkit-animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Keyframe for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #about {
     background-color: #ffffff;
 }
